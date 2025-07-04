@@ -116,10 +116,16 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center"
         >
-          <Avatar className="w-32 h-32 mb-4 border-4 border-primary/20 shadow-lg">
-            <AvatarImage src="https://github.com/shadcn.png" alt="Your Name" />
-            <AvatarFallback>YN</AvatarFallback>
-          </Avatar>
+          <div className="w-32 h-32 mb-4 rounded-full border-4 border-primary/20 shadow-lg overflow-hidden">
+            <video
+              src="https://storage.googleapis.com/magnolia-storage-dev-test-123/videos/txVKJRRxiK/video.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-2">
             Your Name
           </h1>
@@ -163,4 +169,5 @@ export function HeroSection() {
     </section>
   )
 }
+
 
