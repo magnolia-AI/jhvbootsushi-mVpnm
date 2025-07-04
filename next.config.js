@@ -2,6 +2,9 @@
 const SourceTaggingPlugin = require('@antonmagnus/next-source-tagging');
 
 const nextConfig = {
+  experimental: {
+    serverActions: true,
+  },
   output: 'standalone',
   images: {
     remotePatterns: [
