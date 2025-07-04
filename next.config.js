@@ -3,7 +3,9 @@ const SourceTaggingPlugin = require('@antonmagnus/next-source-tagging');
 
 const nextConfig = {
   experimental: {
-    serverActions: true,
+        serverActions: {
+      allowedOrigins: ['pre-3df36778.fly.dev', '*.fly.dev'],
+    },
   },
   output: 'standalone',
   images: {
@@ -58,3 +60,4 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
