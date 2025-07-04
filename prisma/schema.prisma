@@ -10,6 +10,9 @@ datasource db {
 
 model Message {
   id        String   @id @default(uuid())
+  name      String
+  email     String
+  subject   String
   content   String
   createdAt DateTime @default(now())
 }
